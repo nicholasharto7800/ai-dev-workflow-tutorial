@@ -36,3 +36,20 @@ fig = px.line(
 )
 fig.update_traces(hovertemplate="Month: %{x}<br>Sales: $%{y:,.0f}<extra></extra>")
 st.plotly_chart(fig, use_container_width=True)
+
+# Sales by Category Bar Chart
+st.subheader("Sales by Category")
+cat = (
+    df.groupby("category")["total_amount"]
+    .sum()
+    .sort_values(ascending=False)
+    .reset_index()
+)
+fig_cat = px.bar(
+    cat,
+    x="category",
+    y="total_amount",
+    labels={"category": "Category", "total_amount": "Sales ($)"},
+)
+fig_cat.update_traces(hovertemplate="Category: %{x}<br>Sales: $%{y:,.0f}<extra></extra>")
+st.plotly_chart(fig_cat, use_container_width=True)
