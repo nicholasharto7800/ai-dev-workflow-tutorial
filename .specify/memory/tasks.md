@@ -4,7 +4,7 @@
 
 ---
 
-### ECOM-? — Project setup and dependencies
+### ECOM-5 — Project setup and dependencies
 **Step 1 of 7**
 Initialize the project and verify it runs.
 - Run `uv init` in the project directory
@@ -18,7 +18,7 @@ Initialize the project and verify it runs.
 
 ---
 
-### ECOM-? — Data loading
+### ECOM-6 — Data loading
 **Step 2 of 7**
 Load and cache the CSV.
 - Implement `load_data()` with `@st.cache_data`
@@ -32,7 +32,7 @@ Load and cache the CSV.
 
 ---
 
-### ECOM-? — KPI metric cards
+### ECOM-7 — KPI metric cards
 **Step 3 of 7**
 Display the three top-line KPIs.
 - Calculate: Total Sales (sum of `total_amount`), Total Orders (count of `order_id`), Avg Order Value
@@ -45,7 +45,7 @@ Display the three top-line KPIs.
 
 ---
 
-### ECOM-? — Sales trend line chart
+### ECOM-8 — Sales trend line chart
 **Step 4 of 7**
 Build the monthly sales trend visualization.
 - Aggregate `total_amount` by month (`dt.to_period("M")`)
@@ -58,7 +58,7 @@ Build the monthly sales trend visualization.
 
 ---
 
-### ECOM-? — Sales by category bar chart
+### ECOM-9 — Sales by category bar chart
 **Step 5 of 7**
 Build the category breakdown visualization.
 - Group by `category`, sum `total_amount`, sort descending
@@ -71,7 +71,7 @@ Build the category breakdown visualization.
 
 ---
 
-### ECOM-? — Sales by region bar chart
+### ECOM-10 — Sales by region bar chart
 **Step 6 of 7**
 Build the region breakdown visualization.
 - Group by `region`, sum `total_amount`, sort descending
@@ -84,7 +84,7 @@ Build the region breakdown visualization.
 
 ---
 
-### ECOM-? — Deploy to Streamlit Community Cloud
+### ECOM-11 — Deploy to Streamlit Community Cloud
 **Step 7 of 7**
 Ship the dashboard.
 - Push code to GitHub
