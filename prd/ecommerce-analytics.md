@@ -175,7 +175,7 @@ The sales data file contains transaction records with the following structure:
 
 ### Data Volume
 
-- Approximately 1,000 transaction records
+- 482 transaction records
 - Date range: 12 months of historical data
 - 5 product categories
 - 4 geographic regions
@@ -247,7 +247,7 @@ When the dashboard is complete and running with the sample data, you should see 
 
 | Metric | Expected Value |
 |--------|----------------|
-| Total Sales | ~$650,000 - $700,000 |
+| Total Sales | ~$116,500 |
 | Total Orders | 482 |
 | Top Category | Electronics or Audio (varies) |
 | Regions Shown | North, South, East, West |
